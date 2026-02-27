@@ -66,3 +66,10 @@ nekoweb ls <path>
 **description:**
 
 - if no `<path>` is provided, will list `/`
+
+`nekoweb limits`<br>
+fetches & displayes your ratelimit status
+
+```sh
+nekoweb limits
+```
