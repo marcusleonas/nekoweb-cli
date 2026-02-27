@@ -12,21 +12,41 @@ but i'm planning to add everything from the nekoweb api.
 - create/modify/delete files & folders
 - import command
 
-## implemented
+## implemented commands
+
+`nekoweb auth <api_key>`<br>
+authenticate with the nekoweb api
 
 ```sh
-nekoweb auth api_key
+nekoweb auth <api_key>
 ```
 
-saves your api key to a ~/.nekoweb config file
+**description:**
+
+- saves your api key to `~/.nekoweb`
+- used for authenticating all future requests
+
+`nekoweb info`<br>
+retrive site information
 
 ```sh
-nekoweb info [--domain, -d] [--all, -a]
+nekoweb info [flags]
 ```
 
-if no flags provided, then will retrive your "main" site's info.
+if no flags are provided, retrives your **main site's** information.
 
 **flags:**
 
-`--domain, -d` get a site's public info
-`--all, -a` get all of your sites info.
+`-d, --domain <domain>`<br>
+get public information of a specific site
+
+```sh
+nekoweb info --domain n3bula.lol
+```
+
+`-a, --all`<br>
+retrives information for all sites associated with your account
+
+```sh
+nekoweb info --all
+```
