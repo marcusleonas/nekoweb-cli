@@ -25,3 +25,8 @@ nekoweb info [--domain, -d] [--all, -a]
 ```
 
 if no flags provided, then will retrive your "main" site's info.
+
+**flags:**
+
+`--domain, -d` get a site's public info
+`--all, -a` get all of your sites info.
