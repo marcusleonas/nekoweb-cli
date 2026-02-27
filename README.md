@@ -12,6 +12,11 @@ but i'm planning to add everything from the nekoweb api.
 - create/modify/delete files & folders
 - import command
 
+## installation
+
+download the latest version from [releases](https://github.com/marcusleonas/nekoweb-cli/releases) and add it
+somewhere in your `$PATH`
+
 ## implemented commands
 
 `nekoweb auth <api_key>`<br>
