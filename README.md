@@ -8,9 +8,9 @@ but i'm planning to add everything from the nekoweb api.
 
 ## todo
 
--[] deploy command
--[] create/modify/delete files & folders
--[] import command
+- [] deploy command
+- [] create/modify/delete files & folders
+- [] import command
 
 ## implemented
 
