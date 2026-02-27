@@ -50,3 +50,14 @@ retrives information for all sites associated with your account
 ```sh
 nekoweb info --all
 ```
+
+`nekoweb ls <path>`<br>
+lists all files in a directory on nekoweb
+
+```sh
+nekoweb ls <path>
+```
+
+**description:**
+
+- if no `<path>` is provided, will list `/`
