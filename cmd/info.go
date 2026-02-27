@@ -10,7 +10,6 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 )
 
 // infoCmd represents the info command
@@ -19,7 +18,7 @@ var infoCmd = &cobra.Command{
 	Short: "Get information about a nekoweb site",
 	Long:  `Get information about a nekoweb site`,
 	Run: func(cmd *cobra.Command, args []string) {
-		apiKey := viper.GetString("apikey")
+		apiKey := nekoweb.GetAPIKey()
 		client := nekoweb.NewClient(apiKey)
 
 		domain, err := cmd.Flags().GetString("domain")

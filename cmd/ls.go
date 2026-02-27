@@ -10,7 +10,6 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 )
 
 // lsCmd represents the ls command
@@ -26,7 +25,7 @@ var lsCmd = &cobra.Command{
 			path = "/"
 		}
 
-		apiKey := viper.GetString("apikey")
+		apiKey := nekoweb.GetAPIKey()
 		client := nekoweb.NewClient(apiKey)
 
 		res, err := client.ReadFolder(path)
